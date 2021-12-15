@@ -119,8 +119,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-import dj-database-url
-db_from_env = dj-database-url.config()
+import dj_database_url
+db_from_env = dj_database_url.config()
 DATABASE['default'].update(db_from_env)
 
 # Default primary key field type
